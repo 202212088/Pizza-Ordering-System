@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User(Address)</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="\css\style.css">
+    <link rel="shortcut icon" href="\images\favicon.ico" type="image/x-icon">
+
+</head>
+<body class="lg:relative">
+    <nav class="flex flex-wrap items-center justify-between w-full py-4 text-lg text-gray-700 bg-white">
+        <div>
+            <a href="#">
+                <img src="images/PizzaWala.png" class="mt-6 ml-20 w-48 pt-3 hover:scale-110">
+            </a>
+        </div>
+    </nav>
+
+    <!-- User Information -->
+    <div class="flex">
+        <div>
+            <h1 class="lg:ml-36 mt-5 text-3xl font-bold">Aakash Vaghela</h1>
+            <h1 class="lg:ml-36 text-xl font-semibold">aakash@gmail.com</h1>
+            <h1 class="lg:ml-36 text-lg font-semibold">9876543210</h1>
+        </div>
+        <button id="edit_btn" class="px-5 py-3 h-fit absolute right-32 top-36 border-2 rounded-lg hover:bg-orange-300">Edit Profile</button>
+    </div>
+
+<div class="flex">
+    <aside class="w-64" aria-label="Sidebar">
+        <div class="lg:ml-36 mt-5 overflow-y-auto absolute z-10 py-4 pr-10 pl-3 bg-gray-200 rounded h-96">
+            <ul class="space-y-2">
+                <li>
+                    <a href="#" class="flex items-center p-2 pr-10 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
+                        <span class="ml-3">Order History</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" class="flex items-center p-2 text-base cursor-pointer font-normal text-gray-900 rounded-lg bg-gray-100">
+                        <span class="flex-1 ml-3">Address</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="grid grid-cols-2 mt-5">
+        <div class="lg:ml-36 mt-5 bg-slate-100 w-fit p-5">
+            <p class="text-xl font-bold">Address 1</p>
+            <div class="flex space-x-2">
+                <div class="border-2 border-black bg-gray-200 mt-5 px-14">
+                    <p>Ritesh Sutariya</p>
+                    <p>Address Here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:ml-36 mt-5 bg-slate-100 w-fit p-5">
+            <p class="text-xl font-bold">Address 2</p>
+            <div class="flex space-x-2">
+                <div class="border-2 border-black bg-gray-200 mt-5 px-14">
+                    <p>Ritesh Sutariya</p>
+                    <p>Address Here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:ml-36 mt-5 bg-slate-100 w-fit p-5">
+            <p class="text-xl font-bold">Address 3</p>
+            <div class="flex space-x-2">
+                <div class="border-2 border-black bg-gray-200 mt-5 px-14">
+                    <p>Ritesh Sutariya</p>
+                    <p>Address Here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:ml-36 mt-5 bg-slate-100 w-fit p-5">
+            <p class="text-xl font-bold">Address 4</p>
+            <div class="flex space-x-2">
+                <div class="border-2 border-black bg-gray-200 mt-5 px-14">
+                    <p>Ritesh Sutariya</p>
+                    <p>Address Here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit_frm" class="w-64 absolute right-20 top-56 border-2 p-5 hidden">
+    <form action="#">
+        <div class="flex flex-col mb-6">
+            <label for="name" class="mb-1 text-xs sm:text-sm text-gray-600">
+                Name:
+            </label>
+            <div class="relative">
+                <input id="name" type="text" name="name"
+                class="text-sm sm:text-base placeholder-gray-500 pl-2 rounded-lg border border-gray-400 w-full py-2"
+                placeholder="Enter New Name" />
+            </div>
+        </div>
+
+        <div class="flex flex-col mb-6">
+            <label for="email" class="mb-1 text-xs sm:text-sm text-gray-600">
+                E-Mail Address:
+            </label>
+            <div class="relative">
+                <input id="email" type="email" name="email"
+                class="text-sm sm:text-base placeholder-gray-500 pl-2 rounded-lg border border-gray-400 w-full py-2"
+                placeholder="Enter New E-Mail Address" />
+            </div>
+        </div>
+
+        <div class="flex flex-col mb-6">
+            <label for="Contact" class="mb-1 text-xs sm:text-sm text-gray-600">
+                Contact No:
+            </label>
+            <div class="relative">
+                <input id="contact" type="number" name="contact"
+                class="text-sm sm:text-base placeholder-gray-500 pl-2 rounded-lg border border-gray-400 w-full py-2"
+                placeholder="Enter New Contact No" />
+            </div>
+        </div>
+
+        <div class="flex w-full">
+            <button type="submit"
+            class="flex items-center justify-center text-white text-sm bg-orange-500 hover:scale-105 rounded py-2 w-full">
+            EDIT
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+    const edit_btn = document.querySelector('#edit_btn');
+    const edit_menu = document.querySelector('#edit_frm');
+
+    edit_btn.addEventListener('click', () => {
+        edit_menu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
